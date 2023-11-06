@@ -1,3 +1,6 @@
+import { clearFirstPage } from "./recipe.js";
+clearFirstPage();
+
 let response;
 let responseJson;
 
