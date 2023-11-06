@@ -14,11 +14,20 @@ export function clearPage() {
   });
 }
 
+//=====================================================================//
+// Get user input data
+//=====================================================================//
+let query;
+let cuisine;
+let ingredients;
+
 export function getUserInput() {
-  let query = document.getElementById("query").value;
+  query = document.getElementById("query").value;
   if (query === "") {
     query = "Delicious";
   }
-  let cuisine = document.getElementById("cuisine").value;
-  let ingredients = document.getElementById("ingredients").value;
+  cuisine = document.getElementById("cuisine").value;
+  ingredients = document.getElementById("ingredients").value;
+
+  return { query, cuisine, ingredients };
 }

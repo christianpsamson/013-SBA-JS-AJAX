@@ -11,16 +11,16 @@ let response;
 async function fetchRecipes(event) {
   event.preventDefault();
   recipe.clearPage();
-  recipe.getUserInput();
+  const userInput = recipe.getUserInput();
 
   try {
     const options = {
       method: "GET",
       url: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch",
       params: {
-        query: query,
-        cuisine: cuisine,
-        includeIngredients: ingredients,
+        query: userInput.query,
+        cuisine: userInput.cuisine,
+        includeIngredients: userInput.ingredients,
         type: "main course",
         instructionsRequired: "true",
         fillIngredients: "false",
