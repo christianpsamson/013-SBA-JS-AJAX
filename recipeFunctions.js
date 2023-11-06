@@ -16,7 +16,7 @@ export function clearPage() {
   // Create and configure the homeButton to refresh page
   //=====================================================================//
   const homeButton = document.getElementById("home");
-  homeButton.setAttribute("id", "submit");
+  homeButton.setAttribute("id", "homeButton");
 }
 
 //=====================================================================//

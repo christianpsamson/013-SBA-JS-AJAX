@@ -17,10 +17,10 @@ This tool enables users to discover recipes based on the ingredients they have o
 
 ### SBA 308A: JavaScript Web Application
 
-1. The program uses Axios for HTTP request.
-2. The program facilitates user interaction with the API by utilizing its search feature in the home page.
+1. The program uses Axios for HTTP request to communicate with the web API.
+2. The program facilitates user interaction through its search feature in the home page, where user can input their preferred cuisine and ingredients. The http method 'GET' was used to request data from web API.
 3. The program utilizes asynchronous operation for 'Promise' using async and await.
-4. Created the following module file to organize the functions.
+4. Created the following module file to organize some of the functions.
 
 ```js
 recipeFunctions.js;
@@ -37,3 +37,4 @@ spoonacular-recipe-food-nutrition-v1.p.rapidapi.com
 ## Author
 
 Christian Samson
+``
