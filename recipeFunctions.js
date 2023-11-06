@@ -36,3 +36,30 @@ export function getUserInput() {
 
   return { query, cuisine, ingredients };
 }
+
+//=====================================================================//
+// HTTP Request using Axios - POST method
+//=====================================================================//
+
+export async function postCookingInstruction(instructionForAnalysis) {
+  const encodedParams = new URLSearchParams();
+  encodedParams.set("instructions", instructionForAnalysis);
+
+  const options = {
+    method: "POST",
+    url: "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/analyzeInstructions",
+    headers: {
+      "content-type": "application/x-www-form-urlencoded",
+      "X-RapidAPI-Key": "b94a23ccb4msh2d5b9f5673899b2p1edb79jsnc72dbb569f22",
+      "X-RapidAPI-Host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
+    },
+    data: encodedParams,
+  };
+
+  try {
+    const response = await axios.request(options);
+    console.log(response.data);
+  } catch (error) {
+    console.error(error);
+  }
+}

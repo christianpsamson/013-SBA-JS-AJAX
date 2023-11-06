@@ -131,7 +131,6 @@ async function fetchRecipes(event) {
         //=====================================================================//
         const horizontal = document.createElement("hr");
         recipeContainer.appendChild(horizontal);
-  
       }
     } else {
       throw new Error(
@@ -148,3 +147,14 @@ async function fetchRecipes(event) {
 //=====================================================================/
 const submitBtn = document.getElementById("submit");
 submitBtn.addEventListener("click", fetchRecipes);
+
+//=====================================================================//
+// Invoke a function from the module for HTTP request - POST method
+// The input in the instructionForAnalysis variable will be reviewed
+// by the web API for analysis. The function recipe.postCookingInstruction()
+// is commented out. Uncomment it to test.
+//=====================================================================/
+let instructionForAnalysis =
+  `"Put the garlic on the pan, and then add some onions.";
+
+// recipe.postCookingInstruction(instructionForAnalysis);
