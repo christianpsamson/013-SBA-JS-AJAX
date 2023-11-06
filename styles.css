@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&family=Lato:wght@100;400;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font-family: "Lato", sans-serif;
+  --sub-font-family: "Karla", sans-serif;
+  --header-font-color: #726659;
+  --main-bgc: #ffffff;
+}
+
+body {
+  font-family: var(--main-font-family);
+  background: var(--main-bgc);
+  color: var(--header-font-color);
+}
+
+.headerContainer {
+  position: relative;
+  margin: 5vh 10vw 5vh 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1024px;
+}
+
+.headerline {
+  padding: 1em 0;
+}
+
+.h1 {
+  letter-spacing: 10px;
+  padding: 1em 0;
+}
+
+.h2,
+.about {
+  font-family: var(--sub-font-family);
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+.imgContainer {
+  margin: 5vh 10vw 5vh 10vw;
+  width: 80vw;
+  max-width: 1024px;
+  display: flex;
+  position: relative;
+  justify-content: left;
+  align-items: start;
+}
+
+#imgIngredients {
+  width: 80vw;
+}
+
+#searchContainer {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  max-width: 470px;
+  padding: 2em;
+}
+
+.searchFields,
+.searchIngredients {
+  font-family: var(--sub-font-family);
+  font-size: 0.875em;
+  text-transform: uppercase;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(5px);
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.searchIngredients {
+  border-bottom: solid 1px #b3aca7;
+  padding: 15px;
+  height: 100%;
+}
+/*---------------------------------------------------------*/
+/* Style variation on hover and focus states               */
+/*---------------------------------------------------------*/
+input::placeholder,
+textarea::placeholder {
+  color: #57514c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #bbb5af;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover,
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 470px;
+  height: 50px;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  font-family: var(--sub-font-family);
+  font-size: 0.875em;
+  color: #57514c;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #b3aca7;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+
+/*---------------------------------------------------------*/
+/* Display property to hide the elements upon event trigger*/
+/*---------------------------------------------------------*/
+#invisible {
+  display: none;
+}

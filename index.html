@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10 in 20 Recipes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="index.js"></script>
+    <script type="module" src="recipe.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="headerContainer">
+      <h1 class="h1 headerLine">10-in-20 Recipes</h1>
+      <hr style="width: 100%; border: 1.5px solid #726659" />
+      <h3 class="h2 headerline">an ajax project by christian samson</h3>
+      <h4 class="about headerline">
+        Introducing our web app designed with modern life in mind. Whether
+        you're a busy parent, a working professional, or a dedicated business
+        owner, we recognize the importance of fast meal preparation. We
+        understand that your kitchen might not always be fully stocked. This web
+        app is tailored to your contemporary lifestyle. Simply input your
+        available ingredients, and we'll provide you with
+        <strong>10 recipes</strong> that can be prepared in under
+        <strong>20 minutes</strong>. Cooking for the modern world has never been
+        easier!
+      </h4>
+      <p class="instruction headerLine">
+        For a most accurate search, please fill out the boxes below. Is there
+        anything specific you want to search for? Maybe "healthy", or "low-carb"
+        recipe? Enter it in the first box. Are you in a mood for Italian or
+        maybe Chinese? Enter that in the cuisine box. But don't forget to check
+        your kitchen for available ingredients and enter that in the last box.
+        This is what the tool is about.
+      </p>
+    </div>
+
+    <div class="imgContainer">
+      <img
+        id="imgIngredients"
+        src="img/ingredients.png"
+        alt="fresh ingredients"
+      />
+
+      <div id="searchContainer">
+        <form id="searchForm">
+          <input
+            type="text"
+            id="query"
+            class="searchFields"
+            name="query"
+            placeholder="Anything specific you want to search?"
+            required
+          />
+          <input
+            type="text"
+            id="cuisine"
+            class="searchFields"
+            name="cuisine"
+            placeholder="Any preferred cuisine? You can leave this blank"
+          />
+          <textarea
+            name=""
+            id="ingredients"
+            class="searchIngredients"
+            cols="30"
+            rows="10"
+            placeholder="What are the available ingredients in your kitchen?"
+          ></textarea>
+          <input
+            type="submit"
+            id="submit"
+            value="CLICK TO GET YOUR 10 FREE RECIPES"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
