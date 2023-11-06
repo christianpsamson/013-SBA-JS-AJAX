@@ -131,6 +131,7 @@ async function fetchRecipes(event) {
         //=====================================================================//
         const horizontal = document.createElement("hr");
         recipeContainer.appendChild(horizontal);
+  
       }
     } else {
       throw new Error(

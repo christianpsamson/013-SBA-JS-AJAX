@@ -12,6 +12,11 @@ export function clearPage() {
   imgElements.forEach((element) => {
     element.setAttribute("id", "invisible");
   });
+  //=====================================================================//
+  // Create and configure the homeButton to refresh page
+  //=====================================================================//
+  const homeButton = document.getElementById("home");
+  homeButton.setAttribute("id", "submit");
 }
 
 //=====================================================================//

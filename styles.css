@@ -68,7 +68,7 @@ body {
 }
 
 .searchFields,
-.searchIngredients {
+.searchIngredients{
   font-family: var(--sub-font-family);
   font-size: 0.875em;
   text-transform: uppercase;
@@ -115,7 +115,7 @@ textarea:hover {
   color: #e2dedb;
 }
 
-#submit {
+#submit{
   width: 470px;
   height: 50px;
   padding: 0;
@@ -135,7 +135,7 @@ textarea:hover {
 /*---------------------------------------------------------*/
 /* Display property to hide the elements upon event trigger*/
 /*---------------------------------------------------------*/
-#invisible {
+#invisible, #home {
   display: none;
 }
 /*---------------------------------------------------------*/
@@ -155,3 +155,4 @@ textarea:hover {
   width: 100%; 
   border: 1.5px solid #726659"
 }
+
