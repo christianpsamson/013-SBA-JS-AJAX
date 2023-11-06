@@ -155,6 +155,6 @@ submitBtn.addEventListener("click", fetchRecipes);
 // is commented out. Uncomment it to test.
 //=====================================================================/
 let instructionForAnalysis =
-  `"Put the garlic on the pan, and then add some onions.";
+  "Put the garlic on the pan, and then add some onions.";
 
 // recipe.postCookingInstruction(instructionForAnalysis);
