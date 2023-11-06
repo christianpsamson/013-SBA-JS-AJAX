@@ -138,3 +138,20 @@ textarea:hover {
 #invisible {
   display: none;
 }
+/*---------------------------------------------------------*/
+/* Recipe section from HTTP request
+/*---------------------------------------------------------*/
+.recipeContainer {
+  margin: 5vh 10vw 5vh 10vw;
+  width: 80vw;
+  max-width: 1024px;
+}
+
+.recipe{
+  padding: 1em 0;
+}
+
+.horizontalLine{
+  width: 100%; 
+  border: 1.5px solid #726659"
+}

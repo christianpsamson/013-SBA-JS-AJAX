@@ -6,13 +6,12 @@
     <title>10 in 20 Recipes</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script type="module" src="recipeFunctions.js"></script>
-    <script defer src="index.js"></script>
+    <script type="module" defer src="index.js"></script>
   </head>
   <body>
     <div class="headerContainer">
       <h1 class="h1">10-in-20 Recipes</h1>
-      <hr style="width: 100%; border: 1.5px solid #726659" />
+      <hr class="horizontalLine" />
       <h3 class="h2 headerline">an ajax project by christian samson</h3>
       <h4 class="about headerline">
         Introducing our web app designed with modern life in mind. Whether
@@ -21,11 +20,11 @@
         understand that your kitchen might not always be fully stocked. This web
         app is tailored to your contemporary lifestyle. Simply input your
         available ingredients, and we'll provide you with
-        <strong>10 recipes</strong> that can be prepared in under
+        <strong>10 recipes</strong> that can be cooked in under
         <strong>20 minutes</strong>. Cooking for the modern world has never been
         easier!
       </h4>
-      <p class="instruction headerLine">
+      <p class="instruction headerline">
         For a most accurate search, please fill out the boxes below. Is there
         anything specific you want to search for? Maybe "healthy", or "low-carb"
         recipe? Enter it in the first box. Are you in a mood for Italian or
@@ -50,7 +49,6 @@
             class="searchFields"
             name="query"
             placeholder="Anything specific you want to search?"
-            required
           />
           <input
             type="text"
@@ -75,5 +73,6 @@
         </form>
       </div>
     </div>
+    <div class="recipeContainer"></div>
   </body>
 </html>
