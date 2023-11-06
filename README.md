@@ -37,4 +37,3 @@ spoonacular-recipe-food-nutrition-v1.p.rapidapi.com
 ## Author
 
 Christian Samson
-``
