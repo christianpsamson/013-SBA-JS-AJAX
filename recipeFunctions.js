@@ -1,6 +1,7 @@
-export const clearFirstPage = () => {
+export function clearFirstPage() {
+  console.log("It worked");
   const headerElements = document.querySelectorAll(".headerline");
   headerElements.forEach((element) => {
-    element.id = "invisible";
+    element.setAttribute("id", "invisible");
   });
-};
+}

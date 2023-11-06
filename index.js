@@ -1,5 +1,4 @@
-import { clearFirstPage } from "./recipe.js";
-clearFirstPage();
+import * as recipe from "./recipeFunctions.js";
 
 let response;
 let responseJson;
